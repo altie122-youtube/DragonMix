@@ -1,19 +1,23 @@
 {
-  "name": "dragonmix",
-  "version": "1.0.0",
+  "name": "@dragonmix/astro",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pub:beta": "npm publish --tag beta",
+    "pub:release": "npm publish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/altie122-youtube/DragonMix.git"
   },
-  "author": "Altie122",
+  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/altie122-youtube/DragonMix/issues"
   },
-  "homepage": "https://github.com/altie122-youtube/DragonMix#readme"
+  "homepage": "https://github.com/altie122-youtube/DragonMix#readme",
+  "dependencies": {
+    "tailwindcss": "*"
+  }
 }

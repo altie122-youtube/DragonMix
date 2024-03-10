@@ -1,0 +1,47 @@
+{
+  "name": "dragonmix",
+  "version": "0.0.2",
+  "description": "",
+  "exports": "./dist/index.mjs",
+  "bin": {
+    "dragonmix": "dist/index.mjs"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altie122-youtube/DragonMix.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/altie122-youtube/DragonMix/issues"
+  },
+  "homepage": "https://github.com/altie122-youtube/DragonMix#readme",
+  "scripts": {
+    "typecheck": "tsc",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist .turbo node_modules",
+    "start": "node dist/index.js",
+    "release": "changeset version",
+    "pub:beta": "npm run build && npm publish --tag beta",
+    "pub:release": "npm run build && npm publish"
+  },
+  "dependencies": {
+    "@types/gradient-string": "^1.1.5",
+    "@types/node": "^20.11.25",
+    "@types/tinycolor2": "^1.4.6",
+    "chalk": "^5.3.0",
+    "gradient-string": "^2.0.2",
+    "ora": "^8.0.1",
+    "tsup": "^8.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
